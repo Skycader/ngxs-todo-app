@@ -1,11 +1,6 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { TodoStateInterface } from '../models/todo-state.model';
-import {
-  AddTodo,
-  AddTodoFailure,
-  GetTodos,
-  GetTodosFailure,
-} from './actions/todo.actions';
+import { AddTodo, GetTodos, RemoveTodo } from './actions/todo.actions';
 import { TodoService } from '../services/todo.service';
 import { catchError, of, switchMap, tap } from 'rxjs';
 import { TodoInterface } from '../models/todo.model';
@@ -49,11 +44,25 @@ export class TodoState {
         dispatch(new GetTodos());
       }),
       catchError(() => {
-        return dispatch(new AddTodoFailure());
+        alert('Failed to add task');
+        return of();
       }),
     );
   }
 
-  @Action(AddTodoFailure)
-  addTodoFailure() {}
+  @Action(RemoveTodo)
+  remove(
+    { dispatch, getState, patchState }: StateContext<TodoStateInterface>,
+    { id }: RemoveTodo,
+  ) {
+    return this.todoService.removeTodo(id).pipe(
+      tap((status: number) => {
+        dispatch(new GetTodos());
+      }),
+      catchError(() => {
+        alert('Failed to remove task');
+        return of();
+      }),
+    );
+  }
 }

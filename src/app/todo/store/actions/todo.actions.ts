@@ -6,28 +6,16 @@ export class GetTodos {
   constructor() {}
 }
 
-export class GetTodosFailure {
-  static readonly type = '[Todo] Get todos failure';
-
-  constructor() {}
-}
-
 export class AddTodo {
   static readonly type = '[Todo] Add todo';
 
   constructor(public payload: TodoInterface) {}
 }
 
-export class AddTodoFailure {
-  static readonly type = '[Todo] Add todo failure';
-
-  constructor() {}
-}
-
 export class RemoveTodo {
   static readonly type = '[Todo] Remove todo';
 
-  constructor(public payload: number) {}
+  constructor(public id: number) {}
 }
 
 export class ToggleTodo {
