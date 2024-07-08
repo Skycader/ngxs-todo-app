@@ -1670,10 +1670,38 @@
   resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-3.0.3.tgz#0aa5502d547b57abfc4ac492de68e2006e417242"
   integrity sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ==
 
+"@ngrx/store@^18.0.1":
+  version "18.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-18.0.1.tgz#61a6fcd06d1a219f2d4d135faea23f035008d6d8"
+  integrity sha512-TxZiQz06fGSxQ0clYfzkH4NCr6tfa8A7zqzkvvOOK1ZezOHHsk0vZJJtgxQcKUqAQxPpbp5+Z7YR8P/Fuid7GQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@18.0.7":
   version "18.0.7"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-18.0.7.tgz#f3fcd6f060897c48e83d9b477a0c99d380a47420"
   integrity sha512-lXTy+SpLpoO5verX7TGTxV3sbD9MGWxMwJGdXA7DwZcVtDe5t38ZntzJUm7OpxWjRZ/OJn6JLmURNLcVNHzp9g==
+
+"@ngxs/devtools-plugin@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/devtools-plugin/-/devtools-plugin-18.0.0.tgz#0af60ceddc43bb3781c8a48fad383f4a778db768"
+  integrity sha512-fCVBqjHM971KTffBL64KVX7vRTCvm8Hf8tRKRy/9Mn0FKijESquTcuwl+05s57IrwsTyJfMGVBHDdb+nmKgDyw==
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngxs/logger-plugin@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-18.0.0.tgz#b9b2d8fdf527ae4937898cb1338256bc3c3f9509"
+  integrity sha512-2dtwwdO3QiUSSyRFBfuVwOzzyTzsIeFIDvd/bLD4ddbrrTRl4kwPgeqTuj7lWWCvXMUAQ9lMrlt051OGXrSPwQ==
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngxs/store@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-18.0.0.tgz#4266659ff66bd7c845b3b04fb4e62dfd1e4d80f1"
+  integrity sha512-uYs7/KG0yBLS8Mxe87QVgknM950pRzDZ2iRqGaYDCB22NOQYf3sr+wJ3WdYTZnenTresc1njvUhJXzY7/UDdxA==
+  dependencies:
+    tslib "^2.3.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -3057,6 +3085,11 @@ detect-node@^2.0.4:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
+
+dexie@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/dexie/-/dexie-4.0.7.tgz#c92e5032245fc075de58c636238a82ee3ff9fedb"
+  integrity sha512-M+Lo6rk4pekIfrc2T0o2tvVJwL6EAAM/B78DNfb8aaxFVoI1f8/rz5KTxuAnApkwqTSuxx7T5t0RKH7qprapGg==
 
 di@^0.0.1:
   version "0.0.1"
